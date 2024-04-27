@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Recommender</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="watchlist.html">Watchlist</a></li>
+        <li><button id="dark-mode-btn">Dark Mode</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    <div id="search-suggestions"></div>
+    <section id="latest-movies">
+      <h2>Latest Movies</h2>
+      <div id="movie-list"></div>
+      
+      <div id="movie-list"></div>
+<div id="loading-spinner" style="display: none;">Loading...</div>
+    </section>
+
+    <section id="watchlist-section">
+      <h2>Watchlist</h2>
+      
+
+
+      <div id="watchlist"></div>
+      <input type="text" id="movie-search" placeholder="Search for a movie">
+      <button id="add-movie">Add to Watchlist</button>
+    </section>
+  </main>
+
+  
+  <div id="movie-details-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <img id="modal-poster" src="" alt="">
+      <div id="modal-details">
+        <h2 id="modal-title"></h2>
+        <p id="modal-year"></p>
+        <p id="modal-plot"></p>
+        <p><strong>Rating:</strong> <span id="modal-rating"></span></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
